@@ -24,7 +24,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Admin seeder
-        User::firstOrCreate(git status
+       User::firstOrCreate(
+    ['email' => 'admin@example.com'],
             ['email' => 'admin@example.com'],
             [
                 'name' => 'Admin User',
