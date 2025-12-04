@@ -24,16 +24,14 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Admin seeder
-       User::firstOrCreate(
-    ['email' => 'admin@example.com'],
-            ['email' => 'admin@example.com'],
-            [
+        if (!User::where('email', 'admin@example.com')->exists()) {
+            User::create([
                 'name' => 'Admin User',
                 'email' => 'admin@example.com',
                 'password' => Hash::make('password'),
                 'is_admin' => true,
                 'email_verified_at' => now(),
-            ]
-        );
+            ]);
+        }
     }
 }
