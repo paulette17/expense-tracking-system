@@ -125,26 +125,8 @@ class DatabaseSeeder extends Seeder
                 'password' => 'password',
                 'role' => 'admin',
                 'department_id' => $managementDept->id,
-            ],
-            [
-                'name' => 'System Administrator',
-                'email' => 'sysadmin@example.com',
-                'password' => 'sysadmin123',
-                'role' => 'admin',
-                'department_id' => $managementDept->id,
-            ],
-            [
-                'name' => 'Finance Manager',
-                'email' => 'finance.manager@example.com',
-                'password' => 'finance123',
-                'role' => 'admin',
-                'department_id' => $financeDept->id,
-            ],
-            [
-                'name' => 'HR Manager',
-                'email' => 'hr.manager@example.com',
-                'password' => 'hr123',
-                'role' => 'admin',
+        
+            
                 'department_id' => $hrDept->id,
             ],
         ];
@@ -165,19 +147,12 @@ class DatabaseSeeder extends Seeder
         // Finance Staff Accounts
         $financeStaff = [
             [
-                'name' => 'Maria Santos',
-                'email' => 'maria.santos@example.com',
-                'password' => 'maria123',
+                'name' => 'kim mingyu',
+                'email' => 'minguy@gmail.com',
+                'password' => '000000',
                 'role' => 'finance_staff',
                 'department_id' => $financeDept->id,
-            ],
-            [
-                'name' => 'Juan Dela Cruz',
-                'email' => 'juan.delacruz@example.com',
-                'password' => 'juan123',
-                'role' => 'finance_staff',
-                'department_id' => $financeDept->id,
-            ],
+            ]
         ];
 
         foreach ($financeStaff as $staff) {
@@ -196,33 +171,15 @@ class DatabaseSeeder extends Seeder
         // Regular Employee Accounts
         $employees = [
             [
-                'name' => 'Anna Garcia',
-                'email' => 'anna.garcia@example.com',
-                'password' => 'anna123',
+                'name' => 'pau',
+                'email' => 'paulettesantor17@gmail.com',
+                'password' => '123456789',
                 'role' => 'employee',
                 'department_id' => $managementDept->id,
             ],
-            [
-                'name' => 'Carlos Reyes',
-                'email' => 'carlos.reyes@example.com',
-                'password' => 'carlos123',
-                'role' => 'employee',
-                'department_id' => $financeDept->id,
-            ],
-            [
-                'name' => 'Rosa Mendoza',
-                'email' => 'rosa.mendoza@example.com',
-                'password' => 'rosa123',
-                'role' => 'employee',
-                'department_id' => $hrDept->id,
-            ],
-            [
-                'name' => 'Miguel Torres',
-                'email' => 'miguel.torres@example.com',
-                'password' => 'miguel123',
-                'role' => 'employee',
-                'department_id' => $managementDept->id,
-            ],
+            
+            
+            
         ];
 
         foreach ($employees as $employee) {
