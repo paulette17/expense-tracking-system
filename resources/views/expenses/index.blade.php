@@ -119,9 +119,7 @@
                     </div>
 
                     <!-- Pagination -->
-                    <div class="p-3 bg-light">
-                        {{ $expenses->links() }}
-                    </div>
+            
                 @else
                     <div class="text-center py-5 text-muted">
                         <svg class="mb-3" width="48" height="48" fill="none" stroke="currentColor" viewBox="0 0 24 24">
