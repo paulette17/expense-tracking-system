@@ -72,7 +72,7 @@ class UserManagementController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
             'department_id' => 'required|exists:departments,id',
-            'role' => 'required|string|in:admin,staff,employee',
+            'role' => 'required|string|in:admin,finance_staff,employee',
             'password' => 'nullable|confirmed|min:8',
         ]);
 

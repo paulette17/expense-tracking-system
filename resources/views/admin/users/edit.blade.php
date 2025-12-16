@@ -78,7 +78,7 @@
                             >
                                 <option value="">-- Select Role --</option>
                                 <option value="admin" {{ old('role', $user->role) == 'admin' ? 'selected' : '' }}>Admin</option>
-                                <option value="staff" {{ old('role', $user->role) == 'staff' ? 'selected' : '' }}>Staff</option>
+                                <option value="finance_staff" {{ old('role', $user->role) == 'finance_staff' ? 'selected' : '' }}>finance_staff</option>
                                 <option value="employee" {{ old('role', $user->role) == 'employee' ? 'selected' : '' }}>Employee</option>
                             </select>
                         </div>
