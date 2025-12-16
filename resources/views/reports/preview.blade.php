@@ -25,7 +25,7 @@
                         <input type="hidden" name="end_date" value="{{ $validated['end_date'] }}">
                         <input type="hidden" name="category_id" value="{{ $validated['category_id'] ?? '' }}">
                         <input type="hidden" name="status" value="{{ $validated['status'] ?? '' }}">
-                        <button type="submit" class="btn btn-primary shadow-sm">Download PDF</button>
+                    
                     </form>
                 </div>
 
